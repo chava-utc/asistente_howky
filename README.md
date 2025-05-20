@@ -69,6 +69,8 @@ Activar el Entorno virtual para trabajar en él y ejecutar python del entorno vi
 ```bash
 venv\Scripts\activate
 ```
+Despues de activar el entorno virtual se recomeinza volver a inicializar su editor de codigo; por ejemplo con Visual Studio Code unicamente cerrar el programa y volver a abrirlo. Posteriormente se debe especificar el Selector Interpreter: **Ctrl + SHIFT + P**. seleccione la carpeta del proyecto y el python de su entorno virtual; **Python "version" ('venv':venv) .\venv\Scripts\python.exe**
+
 
 ### Requerimientos del Proyecto
 Instala las dependencias definidas en requirements.txt, esto se debe instalar dentro de tu entorno virtual:
@@ -85,6 +87,7 @@ python manage.py makemigrations
 python manage.py migrate
 ```
 ![note](https://img.shields.io/badge/NOTA-Importante-blue)
+
 Las aplicaciones creadas deben estar definidas en el proyecto, se definen en **INSTALLED_APPS** de settings.py [`\cross_project\settings.py`](/cross_project/settings.py)
 
 ### Crear Usuario Administrador
