@@ -241,3 +241,16 @@ django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 6: 'st
 "GET /static/js/settings.js HTTP/1.1" 404 1856
 "GET /static/img/UTC_icono.ico HTTP/1.1" 404 1865
 "GET /static/js/settings.js HTTP/1.1" 404 1856
+"GET /static/js/mdb.umd.min.js HTTP/1.1" 404 1865
+"GET /static/js/sweetalert2.js HTTP/1.1" 404 1865
+"GET /static/js/sweetalert2.js HTTP/1.1" 404 1865
+"GET /static/js/sweetalert2.js HTTP/1.1" 404 1865
+"GET /static/js/mdb.umd.min.js HTTP/1.1" 404 1865
+"GET /static/js/sweetalert2.js HTTP/1.1" 404 1865
+"GET /static/js/mdb.umd.min.js HTTP/1.1" 404 1865
+"GET /static/js/sweetalert2.js HTTP/1.1" 404 1865
+"GET /static/js/sweetalert2.js HTTP/1.1" 404 1865
+"GET /static/js/mdb.umd.min.js HTTP/1.1" 404 1865
+"GET /static/js/sweetalert2.js HTTP/1.1" 404 1865
+"GET /static/js/mdb.umd.min.js HTTP/1.1" 404 1865
+"GET /static/js/sweetalert2.js HTTP/1.1" 404 1865
