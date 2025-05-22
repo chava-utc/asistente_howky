@@ -127,7 +127,7 @@ class Mapa(models.Model):
         verbose_name_plural = "Mapa"
 
 class galeria(models.Model):
-    uuid = models.ForeignKey(Mapa, to_field='uuid', on_delete=models.CASCADE, null=True, blank=True)
+    uuid = models.OneToOneField(Database, to_field='uuid', on_delete=models.CASCADE, null=True, blank=True)
     image = models.ImageField(upload_to=set_imgs_path, max_length=120, blank=True, null=True)
     description = models.TextField(blank=True,null=True)
     

@@ -1,0 +1,243 @@
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2455
+Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "C:\Users\soporte\Documents\Proyectos Web\asistente_howky\venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 244, in _get_session
+    return self._session_cache
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\soporte\Documents\Proyectos Web\asistente_howky\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\soporte\Documents\Proyectos Web\asistente_howky\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: django_session
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\soporte\Documents\Proyectos Web\asistente_howky\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\soporte\Documents\Proyectos Web\asistente_howky\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\soporte\Documents\Proyectos Web\asistente_howky\venv\Lib\site-packages\django\contrib\admin\sites.py", line 265, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\soporte\Documents\Proyectos Web\asistente_howky\venv\Lib\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\soporte\Documents\Proyectos Web\asistente_howky\venv\Lib\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\soporte\Documents\Proyectos Web\asistente_howky\venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\soporte\Documents\Proyectos Web\asistente_howky\venv\Lib\site-packages\django\contrib\admin\sites.py", line 234, in inner
+    if not self.has_permission(request):
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\soporte\Documents\Proyectos Web\asistente_howky\venv\Lib\site-packages\django\contrib\admin\sites.py", line 207, in has_permission
+    return request.user.is_active and request.user.is_staff
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\soporte\Documents\Proyectos Web\asistente_howky\venv\Lib\site-packages\django\utils\functional.py", line 251, in inner
+    self._setup()
+    ~~~~~~~~~~~^^
+  File "C:\Users\soporte\Documents\Proyectos Web\asistente_howky\venv\Lib\site-packages\django\utils\functional.py", line 404, in _setup
+    self._wrapped = self._setupfunc()
+                    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\soporte\Documents\Proyectos Web\asistente_howky\venv\Lib\site-packages\django\contrib\auth\middleware.py", line 39, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+                                            ~~~~~~~~^^^^^^^^^
+  File "C:\Users\soporte\Documents\Proyectos Web\asistente_howky\venv\Lib\site-packages\django\contrib\auth\middleware.py", line 19, in get_user
+    request._cached_user = auth.get_user(request)
+                           ~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\soporte\Documents\Proyectos Web\asistente_howky\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 304, in get_user
+    user_id = _get_user_session_key(request)
+  File "C:\Users\soporte\Documents\Proyectos Web\asistente_howky\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 95, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+                                               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\soporte\Documents\Proyectos Web\asistente_howky\venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 55, in __getitem__
+    return self._session[key]
+           ^^^^^^^^^^^^^
+  File "C:\Users\soporte\Documents\Proyectos Web\asistente_howky\venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 249, in _get_session
+    self._session_cache = self.load()
+                          ~~~~~~~~~^^
+  File "C:\Users\soporte\Documents\Proyectos Web\asistente_howky\venv\Lib\site-packages\django\contrib\sessions\backends\db.py", line 55, in load
+    s = self._get_session_from_db()
+  File "C:\Users\soporte\Documents\Proyectos Web\asistente_howky\venv\Lib\site-packages\django\contrib\sessions\backends\db.py", line 34, in _get_session_from_db
+    return self.model.objects.get(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        session_key=self.session_key, expire_date__gt=timezone.now()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\soporte\Documents\Proyectos Web\asistente_howky\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\soporte\Documents\Proyectos Web\asistente_howky\venv\Lib\site-packages\django\db\models\query.py", line 629, in get
+    num = len(clone)
+  File "C:\Users\soporte\Documents\Proyectos Web\asistente_howky\venv\Lib\site-packages\django\db\models\query.py", line 366, in __len__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\soporte\Documents\Proyectos Web\asistente_howky\venv\Lib\site-packages\django\db\models\query.py", line 1935, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\soporte\Documents\Proyectos Web\asistente_howky\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "C:\Users\soporte\Documents\Proyectos Web\asistente_howky\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1622, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\soporte\Documents\Proyectos Web\asistente_howky\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\soporte\Documents\Proyectos Web\asistente_howky\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\soporte\Documents\Proyectos Web\asistente_howky\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\soporte\Documents\Proyectos Web\asistente_howky\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\soporte\Documents\Proyectos Web\asistente_howky\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\soporte\Documents\Proyectos Web\asistente_howky\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\soporte\Documents\Proyectos Web\asistente_howky\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: django_session
+"GET /admin/ HTTP/1.1" 500 207727
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2455
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2455
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\soporte\Documents\Proyectos Web\asistente_howky\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\soporte\Documents\Proyectos Web\asistente_howky\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\soporte\Documents\Proyectos Web\asistente_howky\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\soporte\Documents\Proyectos Web\asistente_howky\asistent\views.py", line 4, in home
+    return render(request, 'index.html')
+  File "C:\Users\soporte\Documents\Proyectos Web\asistente_howky\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\soporte\Documents\Proyectos Web\asistente_howky\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\soporte\Documents\Proyectos Web\asistente_howky\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\soporte\Documents\Proyectos Web\asistente_howky\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\soporte\Documents\Proyectos Web\asistente_howky\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\soporte\Documents\Proyectos Web\asistente_howky\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\soporte\Documents\Proyectos Web\asistente_howky\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\soporte\Documents\Proyectos Web\asistente_howky\venv\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\soporte\Documents\Proyectos Web\asistente_howky\venv\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\soporte\Documents\Proyectos Web\asistente_howky\venv\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        template_name,
+        ^^^^^^^^^^^^^^
+        skip=history,
+        ^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\soporte\Documents\Proyectos Web\asistente_howky\venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\soporte\Documents\Proyectos Web\asistente_howky\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\soporte\Documents\Proyectos Web\asistente_howky\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+        contents,
+    ...<2 lines>...
+        self.engine,
+    )
+  File "C:\Users\soporte\Documents\Proyectos Web\asistente_howky\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\soporte\Documents\Proyectos Web\asistente_howky\venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "C:\Users\soporte\Documents\Proyectos Web\asistente_howky\venv\Lib\site-packages\django\template\base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\soporte\Documents\Proyectos Web\asistente_howky\venv\Lib\site-packages\django\template\base.py", line 577, in invalid_block_tag
+    raise self.error(
+    ...<3 lines>...
+    )
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 6: 'static'. Did you forget to register or load this tag?
+"GET / HTTP/1.1" 500 160381
+"GET /static/css/style.css HTTP/1.1" 404 1853
+"GET /static/js/settings.js HTTP/1.1" 404 1856
+"GET /static/img/UTC_icono.ico HTTP/1.1" 404 1865
+"GET /static/css/style.css HTTP/1.1" 404 1853
+"GET /static/js/settings.js HTTP/1.1" 404 1856
+"GET /static/img/UTC_icono.ico HTTP/1.1" 404 1865
+"GET /static/js/settings.js HTTP/1.1" 404 1856
+"GET /static/css/style.css HTTP/1.1" 404 1853
+"GET /static/css/style.css HTTP/1.1" 404 1853
+"GET /static/js/settings.js HTTP/1.1" 404 1856
+"GET /static/img/UTC_icono.ico HTTP/1.1" 404 1865
+"GET /static/css/style.css HTTP/1.1" 404 1853
+"GET /static/js/settings.js HTTP/1.1" 404 1856
+"GET /static/img/UTC_icono.ico HTTP/1.1" 404 1865
+"GET /static/css/style.css HTTP/1.1" 404 1853
+"GET /static/js/settings.js HTTP/1.1" 404 1856
+"GET /static/img/UTC_icono.ico HTTP/1.1" 404 1865
+"GET /static/css/style.css HTTP/1.1" 404 1853
+"GET /static/js/settings.js HTTP/1.1" 404 1856
+"GET /static/css/style.css HTTP/1.1" 404 1853
+"GET /static/js/settings.js HTTP/1.1" 404 1856
+"GET /static/img/UTC_icono.ico HTTP/1.1" 404 1865
+"GET /static/css/style.css HTTP/1.1" 404 1853
+"GET /static/js/settings.js HTTP/1.1" 404 1856
+"GET /static/img/UTC_icono.ico HTTP/1.1" 404 1865
+"GET /static/css/style.css HTTP/1.1" 404 1853
+"GET /static/js/settings.js HTTP/1.1" 404 1856
+"GET /static/img/UTC_icono.ico HTTP/1.1" 404 1865
+"GET /static/css/style.css HTTP/1.1" 404 1853
+"GET /static/js/settings.js HTTP/1.1" 404 1856
+"GET /static/img/UTC_icono.ico HTTP/1.1" 404 1865
+"GET /static/css/style.css HTTP/1.1" 404 1853
+"GET /static/js/settings.js HTTP/1.1" 404 1856
+"GET /static/img/UTC_icono.ico HTTP/1.1" 404 1865
+"GET /static/css/styles.css HTTP/1.1" 404 1856
+"GET /static/js/settings.js HTTP/1.1" 404 1856
+"GET /static/img/UTC_icono.ico HTTP/1.1" 404 1865
+"GET /static/css/styles.css HTTP/1.1" 404 1856
+"GET /static/libs/mdb_fontawesome.min.css HTTP/1.1" 404 1898
+"GET /static/js/settings.js HTTP/1.1" 404 1856
+"GET /static/libs/mdb.min.css HTTP/1.1" 404 1862
+"GET /static/img/UTC_icono.ico HTTP/1.1" 404 1865
+"GET /static/css/styles.css HTTP/1.1" 404 1856
+"GET /static/libs/mdb_fontawesome.min.css HTTP/1.1" 404 1898
+"GET /static/libs/mdb.min.css HTTP/1.1" 404 1862
+"GET /static/js/settings.js HTTP/1.1" 404 1856
+"GET /static/img/UTC_icono.ico HTTP/1.1" 404 1865
+"GET /static/js/settings.js HTTP/1.1" 404 1856
