@@ -254,3 +254,11 @@ django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 6: 'st
 "GET /static/js/sweetalert2.js HTTP/1.1" 404 1865
 "GET /static/js/mdb.umd.min.js HTTP/1.1" 404 1865
 "GET /static/js/sweetalert2.js HTTP/1.1" 404 1865
+"GET /static/js/mdb.umd.min.js HTTP/1.1" 404 1865
+"GET /static/js/sweetalert2.js HTTP/1.1" 404 1865
+"GET /static/js/sweetalert2.js HTTP/1.1" 404 1865
+"GET /static/libs/sweetalert2.js HTTP/1.1" 404 1871
+"GET /static/libs/sweetalert2.js HTTP/1.1" 404 1871
+"GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 404 1895
+"GET /static/webfonts/fa-solid-900.ttf HTTP/1.1" 404 1889
+"GET /static/libs/mdb_fontawesome.min.css HTTP/1.1" 404 1898
