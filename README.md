@@ -1,4 +1,4 @@
-![Logo](./asistent/static/img/UTC_logo-plano.webp)
+![Logo](./cross_asistent/static/img/UTC_logo-plano.webp)
 
 # Proyecto Asistente Howky
 
